@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #293854;
+    color: #293854;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 2rem;   
+}
+
+.border-gradient {
+    max-width: 640px;
+    padding: 1rem;
+    border-radius: 1rem;
+    background: linear-gradient(to right, #712F79, #4176fc);
+    padding: 3px;
+  }
+.generator {
+    padding: 2rem 1rem;
+    width: 100%;
+    max-width: 640px;
+    background-color: #fdfff7;
+    border-radius: 1rem;  
+}
+
+/* //Reset inputs and buttons */
+input:not([type="checkbox"]),
+button {
+  background: none;
+  appearance: none;
+  outline: none;
+  border: none;  
+}
+
+input[type="checkbox"] {
+    cursor: pointer;
+    accent-color: #4176fc;
+}
+
+.password-wrap {
+    position: relative;
+    display: flex;
+    margin: 1rem 1rem 0 1rem;
+}
+
+.password-border {
+    background: linear-gradient(to right, #712F79, #4176fc);
+    height: 2px;
+    margin-bottom: 1rem;
+}
+
+.password-wrap input{
+    flex: 1 1 0%;
+    padding: 0.5rem;
+    color: #293854;
+}
+
+.password-wrap input::placeholder{
+    font-style: italic;
+    color: #888;
+}
+
+.password-wrap button{
+    cursor: pointer;
+    background: linear-gradient(to bottom, #712F79 0%, #4176fc 75%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+label {
+    display: flex;
+    user-select: none;
+    margin-bottom: 1rem;
+}
+
+label span {
+    display: block;
+    flex: 1 1 0%;
+    white-space: nowrap;
+}
+
+input[type="number"] {
+    text-align: right;
+}
+
+button[type="submit"] {
+    cursor: pointer;
+    color: #fdfff7;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    background: linear-gradient(to right, #712F79 25%, #4176fc 50%);
+    background-size: 200%;
+    background-position: 25%;
+    transition: 0.3s ease-out;
+    border-radius: 0.25rem;
+    text-transform: uppercase;
+}
+
+button[type="submit"]:hover {
+    background-position: 75%;
+}
+
